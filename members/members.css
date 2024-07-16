@@ -14,7 +14,11 @@
 }
 
 .extra-member {
-  padding: 2vw;
+  padding: 1vw;
+}
+
+.extra-member h1 {
+  font-size: 3vw;
 }
 
 .subtitle {
@@ -86,6 +90,10 @@ bothered currently, maybe something to look at in the future...  */
   font-size: 3.5vw;
   font-weight: bolder;
   height: 1em;
+}
+
+.username a, .extra-member h1 a {
+  color: black;
 }
 
 .name-pronouns { 
@@ -195,12 +203,12 @@ bothered currently, maybe something to look at in the future...  */
   
 .Streamers-Title { 
     grid-area: Streamers-Title;
-    font-size: 3vw;
     margin: 0;
     align-self: center;
 }
 
 .Streamers-Title h1 {
+  font-size: 6vw;
   margin: 0;
   color: white;
 }
