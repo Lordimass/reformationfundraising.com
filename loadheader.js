@@ -42,7 +42,7 @@ dropdownContent.setAttribute("class", "dropdown-content")
 const latestYear = 2024
 for (let i = 2020; i <= latestYear; i++) {
     const year = document.createElement("a")
-    year.setAttribute("href", homePageURL+`/${i}-stream`)
+    year.setAttribute("href", homePageURL+`/archive/${i}`)
     year.setAttribute("id", `stream${i}`)
     year.innerText = i
     dropdownContent.appendChild(year)

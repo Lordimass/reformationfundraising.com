@@ -175,13 +175,6 @@ bothered currently, maybe something to look at in the future...  */
   width: 100%;
 }
 
-.curve {
-  height: 5vh;
-  border-bottom-left-radius: 1000%;
-  border-bottom-right-radius: 1000%;
-  background-color: black;
-}
-
 #title-content-container {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;

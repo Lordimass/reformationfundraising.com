@@ -28,29 +28,17 @@ p {
 
 a[href] {
     text-decoration: none;
-    color: blue;
 }
 
 a[href]:hover {
-    font-weight: 700;
+    font-weight: bolder;
 }
 
 /****************  Classes  ****************/
-.half-split {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
 
-.half-split-el {
-    width: 50%;
-    justify-items: center;
+.curve {
+    height: 5vh;
+    border-bottom-left-radius: 1000%;
+    border-bottom-right-radius: 1000%;
+    background-color: black;
 }
-
-#footer-gifs {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
