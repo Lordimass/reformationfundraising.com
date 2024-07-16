@@ -1,4 +1,4 @@
-const homePageURL = "rff.lordimass.net"
+const homePageURL = "https://rff.lordimass.net"
 
 // Get root element
 const headerContainer = document.getElementById("header")
@@ -17,7 +17,7 @@ const logoIconLink = document.createElement("a")
 logoIconLink.setAttribute("href", homePageURL)
 
 const logoIconImg = document.createElement("img")
-logoIconImg.setAttribute("src", "images/logosmol.png")
+logoIconImg.setAttribute("src", homePageURL+"/images/logosmol.png")
 
 const logoText = document.createElement("div")
 logoText.setAttribute("id", "logo-text")
@@ -42,7 +42,7 @@ dropdownContent.setAttribute("class", "dropdown-content")
 const latestYear = 2024
 for (let i = 2020; i <= latestYear; i++) {
     const year = document.createElement("a")
-    year.setAttribute("href", `${i}-stream.html`)
+    year.setAttribute("href", homePageURL+`/${i}-stream`)
     year.setAttribute("id", `stream${i}`)
     year.innerText = i
     dropdownContent.appendChild(year)
@@ -53,7 +53,7 @@ members.setAttribute("class", "nav")
 members.setAttribute("id", "members")
 
 const membersLink = document.createElement("a")
-membersLink.setAttribute("href", "members.html")
+membersLink.setAttribute("href", homePageURL+"/members")
 membersLink.innerText = "Members"
 
 // Nest elements
