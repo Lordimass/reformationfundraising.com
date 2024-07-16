@@ -203,4 +203,33 @@ bothered currently, maybe something to look at in the future...  */
   #curve {
     height: 2vh;
   }
+
+  .streamers {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "img1 info1"
+    "img2 info2"
+    "img3 info3"
+    "img4 info4"
+    "img5 info5"
+    "img6 info6"
+    "img7 info7" 
+    "img8 info8";
+  }
+
+  .username {
+    font-size: 7vw;
+  }
+
+  .info4 .username {
+    font-size: 6vw;
+  }
+
+  .name-pronouns {
+    font-size: 4vw;
+  }
+
+  .socials a img {
+    width: 5vw;
+  }
 }
