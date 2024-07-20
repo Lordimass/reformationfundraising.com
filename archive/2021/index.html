@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../common.css">
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../header.css">
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../archivecommon.css">
+</head>
+
+<body style="margin: 0;">
+    <div id="header"></div>
+    <script src="../../loadheader.js"></script>
+
+    <div id="title-box" style="background-image: url(https://rff.lordimass.net/images/2021theme.jpeg); background-position: 0 -20vw; height: fit-content;">
+        <div class="Title" style="width:fit-content; margin: auto auto; padding-top: 5vw;">24HR STREAM 2021</div>
+        <div class="title-box-content" style="grid-template-rows: 1fr; padding: 0; grid-template-columns: 2fr 1fr; padding-bottom: 5vw;">
+            <div class="Charity">MENTAL HEALTH UK</div>
+            <div class="Quantity">£600</div>
+        </div>
+    </div>
+
+    <div class="subtext-container">
+        <div class="subtext"><p>
+            The 2021 livestream was a 24 hour stream to raise money for Mental Health UK.
+            This stream was done as part of a school event where teams of people had to raise as much money as possible to win points for their house,
+            our team won by a couple of orders of magnitude.
+            Due to the fact that it was a school managed event, 
+            the donations page was not managed through Tiltify like in 2020, 
+            so we do not have access to the original donations page or the donation log anymore, 
+            but we do have a recording of the whole stream.
+        </p></div>
+        <div class="curve"></div>
+    </div>
+
+    <div class="vod-container">
+        <div class="Part-1"><h1>Part 1</h1><br><iframe width="560" height="315" src="https://www.youtube.com/embed/5QgxcR86fHY?si=7lhPFd56xUDU9ANT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="Part-2"><h1>Part 2</h1><br><iframe width="560" height="315" src="https://www.youtube.com/embed/hM6wTaPzI-8?si=GWF6hoIYq0P3iXXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="Part-3"><h1>Part 3</h1><br><iframe width="560" height="315" src="https://www.youtube.com/embed/lG-q0YFqbiE?si=ccdup_YkRl17w5th" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </div>
+
+</body>
+
+<style>
+
+.vod-container {  
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "Part-1 Part-2"
+    "Part-3 Part-3";
+}
+
+@media screen and (max-width: 1100px) {
+    .vod-container {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "Part-1"
+        "Part-2"
+        "Part-3";
+    }
+}
+
+.Part-3 { grid-area: Part-3; }
+
+.Part-1 { grid-area: Part-1; }
+
+.Part-2 { grid-area: Part-2; }
+
+</style>
+
+</html>
