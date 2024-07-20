@@ -115,10 +115,6 @@ a {
         height: 45vw;
     }
 
-    .vod-container {
-        grid-template-columns: 1fr;
-    }
-
     .vod-container h1 {
         font-size: 7vw;
     }
