@@ -1,12 +1,18 @@
 /****************  EXTRA FONT FACES  ****************/
+
 @font-face {
-    font-family: "Omnes Pro Bold";
-    src: url("fonts/Omnes_Pro_Bold.otf") format("opentype");
+    font-family: "Omnes Light";
+    src: url("fonts/Omnes\ Light.ttf") format("opentype");
 }
 
 @font-face {
     font-family: "Omnes Medium";
     src: url("fonts/Omnes\ Medium.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Omnes Pro Bold";
+    src: url("fonts/Omnes_Pro_Bold.otf") format("opentype");
 }
 
 @font-face {
