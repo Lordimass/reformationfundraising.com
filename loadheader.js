@@ -1,4 +1,4 @@
-const homePageURL = "https://rff.lordimass.net"
+const homePageURL = "https://reformationfundraising.com"
 
 // Get root element
 const headerContainer = document.getElementById("header")
