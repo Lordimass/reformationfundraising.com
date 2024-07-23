@@ -1,5 +1,17 @@
 const homePageURL = "https://reformationfundraising.com"
 
+// Load favicon
+const favicon = document.createElement("link")
+favicon.setAttribute("rel", "icon")
+favicon.setAttribute("type","image/x-icon")
+favicon.setAttribute("href","reformationfundraising.com/images/favicon.ico")
+document.head.appendChild(favicon)
+
+// Set page title
+const title = document.createElement("title")
+title.innerText = "Reformation Fundraising"
+document.head.appendChild(title)
+
 // Get root element
 const headerContainer = document.getElementById("header")
 
@@ -69,4 +81,3 @@ navBox.appendChild(archive)
 archive.appendChild(dropdownContent)
 navBox.appendChild(members)
 members.appendChild(membersLink)
-
