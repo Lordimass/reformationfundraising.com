@@ -4,7 +4,7 @@ const homePageURL = "https://reformationfundraising.com"
 const favicon = document.createElement("link")
 favicon.setAttribute("rel", "icon")
 favicon.setAttribute("type","image/x-icon")
-favicon.setAttribute("href","reformationfundraising.com/images/favicon.ico")
+favicon.setAttribute("href","https://reformationfundraising.com/images/favicon.ico")
 document.head.appendChild(favicon)
 
 // Set page title
