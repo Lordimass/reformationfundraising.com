@@ -1,0 +1,95 @@
+/****************  EXTRA FONT FACES  ****************/
+
+@font-face {
+    font-family: "Omnes Black";
+    src: url("fonts/Omnes\ Black.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Omnes Medium";
+    src: url("fonts/Omnes\ Medium.ttf") format("opentype");
+}
+
+/********************************************************/
+
+body {
+    background-image: url(images/ruinedwallbackground.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.title-container {
+    margin: auto auto;
+    text-align: center;
+    width: fit-content;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Omnes Black";
+    font-size: 10vw;
+}
+
+h2 {
+    font-family: "Omnes Medium";
+    font-size: 3vw;
+}
+
+.return-home {
+    color: white;
+    background-color: black;
+    width: 60%;
+    height: 5vw;
+    border-radius: 3vw;
+    margin: auto auto;
+}
+
+.text a {
+    color: white;
+    font-family: "Omnes Black";
+    font-size: 3vw;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "text image";
+}
+
+.text {
+    margin: auto auto;
+    text-align: center;
+    grid-area: "text"
+}
+
+.split img {grid-area: "img";}
+
+@media screen and (max-width: 1100px) {
+    .split {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "image"
+        "text";
+        gap: 5vw;
+    }
+
+    h1 {
+        font-size: 20vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    .text a {
+        font-size: 5vw;
+    }
+
+    .return-home {
+        height: fit-content;
+    }
+}

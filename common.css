@@ -40,6 +40,10 @@ a[href]:hover {
     font-weight: bolder;
 }
 
+body {
+    margin: 0;
+}
+
 /****************  Classes  ****************/
 
 .curve {
