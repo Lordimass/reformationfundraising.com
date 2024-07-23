@@ -12,6 +12,18 @@ const title = document.createElement("title")
 title.innerText = "Reformation Fundraising"
 document.head.appendChild(title)
 
+// Initialise Google Analytics
+const script = document.createElement("script")
+script.setAttribute("async", "")
+script.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-WED19TWS98")
+document.body.appendChild(script)
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-WED19TWS98');
+
 // Get root element
 const headerContainer = document.getElementById("header")
 
