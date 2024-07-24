@@ -28,11 +28,21 @@ h1 {
     margin: 0;
     font-family: "Omnes Black";
     font-size: 10vw;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
 }
 
 h2 {
     font-family: "Omnes Medium";
     font-size: 3vw;
+    background-color: white;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 0 0 2vw 0;
 }
 
 .return-home {
@@ -53,10 +63,10 @@ h2 {
 .split {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     justify-items: center;
     grid-template-areas: 
     "text image";
+    margin: 5vw;
 }
 
 .text {
@@ -65,7 +75,14 @@ h2 {
     grid-area: "text"
 }
 
-.split img {grid-area: "img";}
+.split img {
+    grid-area: "img";
+}
+
+#vertical {
+    display: none;
+    margin: 0;
+}
 
 @media screen and (max-width: 1100px) {
     .split {
@@ -78,11 +95,11 @@ h2 {
     }
 
     h1 {
-        font-size: 20vw;
+        font-size: 17vw;
     }
 
     h2 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .text a {
@@ -91,5 +108,17 @@ h2 {
 
     .return-home {
         height: fit-content;
+    }
+
+    #horizontal {
+        display: none;
+    }
+
+    #vertical {
+        display: block;
+    }
+
+    body {
+        background-size: auto 200%;
     }
 }
