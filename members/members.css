@@ -99,7 +99,8 @@ bothered currently, maybe something to look at in the future...  */
 .name-pronouns { 
   grid-area: name-pronouns; 
   font-family: "Omnes Medium";
-  font-size: 2vw
+  font-size: 2vw;
+  white-space: nowrap;
 }
 
 .socials { grid-area: socials; }
