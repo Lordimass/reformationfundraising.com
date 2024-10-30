@@ -84,3 +84,25 @@ archive.appendChild(dropdown)
 header.appendChild(members)
 members.appendChild(membersP)
 
+// Create Footer
+const footer = document.createElement("div")
+footer.setAttribute("class", "footer")
+
+const p1 = document.createElement("p")
+const p2 = document.createElement("p")
+const p3 = document.createElement("p")
+const p4 = document.createElement("p")
+const p5 = document.createElement("p")
+
+p2.innerText = "Contact lordimass@lordimass.net for support"
+p2.setAttribute("class", "left-footer-el")
+p3.innerText = "This site is licensed under Creative Commons BY-NC-ND 4.0"
+p4.setAttribute("class", "right-footer-el")
+p4.innerHTML = "Website programmed by <a target=\"_blank\" href=\"https://lordimass.net\">Lordimass</a>!"
+
+document.body.appendChild(footer)
+footer.appendChild(p1)
+footer.appendChild(p2)
+footer.appendChild(p3)
+footer.appendChild(p4)
+footer.appendChild(p5)
