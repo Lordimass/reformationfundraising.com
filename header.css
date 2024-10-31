@@ -120,7 +120,7 @@
 .footer p {
     text-align: center;
     color: white;
-    font-size: 0.5vw;
+    font-size: 1vw;
 }
 
 .footer .right-footer-el {
@@ -141,6 +141,6 @@
     }
 
     .footer p {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 }
