@@ -21,6 +21,10 @@
 }
 /****************  STYLE TAGS  ****************/
 
+svg { /* Unpsecified SVG Fonts will default to this */
+    font-family: "Omnes Pro Bold";
+}
+
 body {
     margin: 0;
 }
