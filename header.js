@@ -100,9 +100,22 @@ p3.innerText = "This site is licensed under Creative Commons BY-NC-ND 4.0"
 p4.setAttribute("class", "right-footer-el")
 p4.innerHTML = "Website programmed by <a target=\"_blank\" href=\"https://lordimass.net\">Lordimass</a>!"
 
-document.body.appendChild(footer)
-footer.appendChild(p1)
-footer.appendChild(p2)
-footer.appendChild(p3)
-footer.appendChild(p4)
-footer.appendChild(p5)
+// Nest footer elements
+async function nest_footer() {
+    // Set footer display mode to position it correctly to the bottom of the page
+    body = document.body
+    if (window.innerHeight < body.getBoundingClientRect().height) {
+        footer.style.position = "relative";
+    } else {
+        footer.style.position = "absolute";
+    }
+
+    document.body.appendChild(footer)
+    footer.appendChild(p1)
+    footer.appendChild(p2)
+    footer.appendChild(p3)
+    footer.appendChild(p4)
+    footer.appendChild(p5)
+}
+document.addEventListener('DOMContentLoaded', nest_footer);
+

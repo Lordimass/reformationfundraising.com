@@ -105,15 +105,15 @@
     color:black;
 }
 
-/* Footer Styles */
+/***************************** FOOTER *****************************/
 .footer {
     height: min-content;
     background-color: black;
     vertical-align: bottom;
-    position: fixed;
     bottom: 0;
     width: 100%;
     display: grid;
+    margin-top: 2vw;
     grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
 }
 
