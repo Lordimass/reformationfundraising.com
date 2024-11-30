@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../common.css">
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../header.css">
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="index.css">
+</head>
+
+<body>
+<script src="../header.js"></script>
+
+<div class="main-box">
+    <div class="stream-embed-container">
+        <div id="stream-embed"></div>
+    </div>
+    <div id="info-tab-button" class="info-tab-button"><p>Info</p></div>
+    <div id="chat-tab-button" class="chat-tab-button"><p>Chat</p></div>
+    <div id="info-tab" class="info-tab">
+        <div class="info-tab-text">
+            <h1 id="title-1">24HR STREAM</h1>
+            <div class="title-2-container"><h1>2025</h2></div>
+            <p>
+                Welcome to the 6th stream in our series of annual charity livestreams!
+                <br><br>
+                We invite you to join us on the 1st of February from 6am GMT to raise
+                money for <b>Stonewall</b>, a charity which is very close to all of us as a team.
+
+                Check out our members page to find out about everyone who makes up our group,
+                or use the buttons below for more.
+            </p>
+        </div>
+        <div class="info-tab-buttons">
+            <a target="_blank"><button class="more-button">Find Out More</button></a>
+            <a target="_blank"><button class="donate-button">Donate</button></a>
+        </div>
+    </div>
+    <div id="chat-tab" class="chat-tab">
+        <iframe src="https://www.twitch.tv/embed/lordimass/chat?parent=reformationfundraising.com"
+            height="100%"
+            width="100%">
+        </iframe>
+    </div>
+
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script src="stream-embed.js"></script>
+    <script src="tab-switcher.js"></script>
+</div>
+
+
+
+</body>
+
+</html>

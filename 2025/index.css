@@ -1,0 +1,137 @@
+body {
+    background-image: url("../images/Collage.jpg");
+    background-size: cover;
+}
+
+.chat-tab-button {
+    grid-area: chat-tab-button;
+    background-image: linear-gradient(white,rgb(206, 206, 206));
+}
+
+.info-tab-button {
+    grid-area: info-tab-button;
+    left: 10%;
+    background-color: white;
+    
+}
+
+.chat-tab-button, .info-tab-button {
+    position: relative;
+    width: 75%;
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+    text-align: center;
+    text-justify: center;
+    font-family: Omnes Pro;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.main-box {
+    display: grid;
+    grid-template-columns: 65vw 16vw 16vw;
+    grid-template-rows: 1fr 10fr;
+    margin: 2.5%;
+    width: 95%;
+    height: max-content;
+    border-radius: 1vw;
+    grid-template-areas: 
+    ". info-tab-button chat-tab-button"
+    "stream-embed right-panel right-panel"; 
+}
+
+.title-2-container {
+    background-color: black;
+    padding-left: 1vw;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+
+    /* Initial off screen position */
+    transform: translateX(+100%);
+
+    /* Animation Properties */
+    animation: fly-in 1s ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+
+@keyframes fly-in {
+    0% {
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.title-2-container h1 {
+    color: white;
+}
+
+.stream-embed-container {
+    grid-area: stream-embed;
+    width: 100%;
+    height: 36.5625vw;
+    overflow: hidden;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+}
+
+.info-tab, .chat-tab {
+    grid-area: right-panel;
+    background-color: white;
+    border-bottom-right-radius: 1vw;
+    border-top-right-radius: 1vw;
+    overflow: hidden;
+}
+
+.info-tab {
+    width: 29vw;
+    padding-left: 1vw;
+}
+
+.chat-tab {
+    width: 30vw;
+    display: none;
+}
+
+.info-tab-text {
+    overflow: hidden;
+}
+
+.info-tab p {
+    font-size: 1.4vw;
+}
+
+#stream-embed {
+    height: 100%;
+}
+
+.info-tab p {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.donate-button, .more-button {
+    font-family: "Omnes Black";
+    width: max-content;
+    border: none;
+    background-color: black;
+    color: white;
+    height: 5vw;
+    border-radius: 5vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.donate-button:hover, .more-button:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.donate-button {
+    width: 39%;
+}
+
+.more-button {
+    width: 59%;
+}
