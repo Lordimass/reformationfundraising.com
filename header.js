@@ -102,14 +102,7 @@ p4.innerHTML = "Website programmed by <a target=\"_blank\" href=\"https://lordim
 
 // Nest footer elements
 async function nest_footer() {
-    // Set footer display mode to position it correctly to the bottom of the page
-    body = document.body
-    if (window.innerHeight < body.getBoundingClientRect().height) {
-        footer.style.position = "relative";
-    } else {
-        footer.style.position = "absolute";
-    }
-
+    position_footer()
     document.body.appendChild(footer)
     footer.appendChild(p1)
     footer.appendChild(p2)
@@ -117,5 +110,18 @@ async function nest_footer() {
     footer.appendChild(p4)
     footer.appendChild(p5)
 }
+
+async function position_footer() {
+    // Set footer display mode to position it correctly to the bottom of the page
+    body = document.body
+    if (window.innerHeight < body.getBoundingClientRect().height) {
+        console.log(window.innerHeight + " " + body.getBoundingClientRect().height + " Window height means footer position changed to relative")
+        footer.style.position = "relative";
+    } else {
+        console.log(window.innerHeight + " " + body.getBoundingClientRect().height + " Window height means footer position changed to absolute")
+        footer.style.position = "absolute";
+    }
+}
 document.addEventListener('DOMContentLoaded', nest_footer);
+document.addEventListener("resize", nest_footer)
 
