@@ -9,12 +9,12 @@
 <body>
 <script src="../header.js"></script>
 
-<div class="main-box">
+<div class="main-box" id="stream-main-box">
     <div class="stream-embed-container">
         <div id="stream-embed"></div>
     </div>
-    <div id="info-tab-button" class="info-tab-button"><p>Info</p></div>
-    <div id="chat-tab-button" class="chat-tab-button"><p>Chat</p></div>
+    <div id="info-tab-button" class="info-tab-button"><div><p>Info</p></div></div>
+    <div id="chat-tab-button" class="chat-tab-button"><div><p>Chat</p></div></div>
     <div id="info-tab" class="info-tab">
         <div class="info-tab-text">
             <h1 id="title-1">24HR STREAM</h1>
@@ -30,7 +30,7 @@
             </p>
         </div>
         <div class="info-tab-buttons">
-            <a target="_blank"><button class="more-button">Find Out More</button></a>
+            <a href="#stonewall-box"><button class="more-button">Find Out More</button></a>
             <a target="_blank"><button class="donate-button">Donate</button></a>
         </div>
     </div>
@@ -40,14 +40,62 @@
             width="100%">
         </iframe>
     </div>
-
-    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-    <script src="stream-embed.js"></script>
-    <script src="tab-switcher.js"></script>
 </div>
 
+<div class="main-box" id="podium-main-box">
+    <div class="podium-container">
+        <iframe src="../podium/index.html" style="border: none; height: 100%; width: 100%;" title="Donation Podium" scrolling="no"></iframe>
+    </div>
 
+    <div class="podium-blurb">
+        <h1>A Special Thank You ❤️</h1>
+        <p>Over the last 5 years thanks to your support we have raised a breath-taking</p>
+        <h1 id="total-raised">£5000</h1>
+        <p>These are our top 10 supporters over the years, and from all of us, thank you!</p>
+        <table id="leaderboard">
+            <tr><td>1. Name</td><td>•</td><td>£0</td></tr>
+            <tr><td>2. Name</td><td>•</td><td>£0</td></tr>
+            <tr><td>3. Name</td><td>•</td><td>£0</td></tr>
+            <tr><td>4. Name</td><td>•</td><td>£0</td></tr>
+            <tr><td>5. Name</td><td>•</td><td>£0</td></tr>
+            <tr><td>6. Name</td><td>•</td><td>£0</td></tr>
+            <tr><td>7. Name</td><td>•</td><td>£0</td></tr>
+            <tr><td>8. Name</td><td>•</td><td>£0</td></tr>
+            <tr><td>9. Name</td><td>•</td><td>£0</td></tr>
+            <tr><td>10. Name</td><td>•</td><td>£0</td></tr>
+        </table>
+        </p>
+    </div>
+</div>
 
+<div class="main-box" id="stonewall-box">
+    <div class="stonewall-image-container">
+        <img src="../images/stonewall.png">
+    </div>
+    <div class="stonewall-info-box">
+        <h1>Who are Stonewall?</h1>
+        <p>In the 1950s and 60s, very few places welcomed gay people, but those that did
+            were often bars. One of these was <b>The Stonewall Inn</b>, a pub which catered
+            to a wide assortment of patrons, inluding drag queens, transgender people, and 
+            homeless youth. In the 1960s, raids on gay bars were routine, but whe they raided
+            The Stonewall Inn they quickly lost control of the situation, leading to <b>The
+            Stonewall Riots</b>. These were a series of protests which led the charge on
+            earning the first LGBTQ+ rights in America and later, other places like the UK.
+            <br><br>
+            Today, Stonewall is a charity which continues to fight for LGBTQ+ rights by
+            providing support and guidance on LGBTQ+ inclusion, "working on a world where
+            we're all free to be".
+        </p>
+        <div>
+        <a target="_blank" href="https://www.stonewall.org.uk/"><button class="more-button" id="stonewall-more">Find Out More</button></a>
+        </div>
+    </div>
+</div>
+
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<script src="stream-embed.js"></script>
+<script src="tab-switcher.js"></script>
+<script src="donation-quants.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,6 @@
 // ./node_modules/.bin/http-server -a localhost -p 8000 -c-1
 
-// Replace with your actual Spreadsheet ID
 const spreadsheetId = '10ssx7zLGEJX1V77Whe-iyyw7jK6l791lgqJ8zg-iYNE';
-
-// Replace with your API Key
 const apiKey = 'AIzaSyBt9I-HKdyZ1uasiCfzwS_RGwzgOkbPpq8';
 
 // Construct the URL for Google Sheets API v4

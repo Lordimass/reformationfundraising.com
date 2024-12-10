@@ -3,6 +3,10 @@ body {
     background-size: cover;
 }
 
+#stream-main-box {
+    margin-top: 2%;
+}
+
 .chat-tab-button {
     grid-area: chat-tab-button;
     background-image: linear-gradient(white,rgb(206, 206, 206));
@@ -29,15 +33,90 @@ body {
 
 .main-box {
     display: grid;
-    grid-template-columns: 65vw 16vw 16vw;
+    grid-template-columns: 65% 16% 16%;
     grid-template-rows: 1fr 10fr;
-    margin: 2.5%;
-    width: 95%;
+    margin: 5%;
+    width: 90%;
     height: max-content;
     border-radius: 1vw;
     grid-template-areas: 
     ". info-tab-button chat-tab-button"
     "stream-embed right-panel right-panel"; 
+}
+
+#stonewall-box {
+    grid-template-columns: 67% 32%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "text image";
+    margin-bottom: 2%;
+}
+
+.stonewall-image-container {
+    grid-area: image;
+    height: 100%;
+    overflow: hidden;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.stonewall-image-container img {
+    height: 100%;
+}
+
+.stonewall-info-box {
+    background-image: linear-gradient(to left, rgb(206, 206, 206) 0%, white 2%);
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+}
+
+.stonewall-info-box p, .stonewall-info-box h1 {
+    margin: 1vw;
+}
+
+.stonewall-info-box div {
+    width: 97.5%;
+    margin: 1vw;
+}
+
+#stonewall-more {
+    width: 100%;
+}
+
+#podium-main-box {
+    grid-template-columns: 32% 67%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "blurb podium"; 
+}
+
+.podium-container {
+    grid-area: podium;
+    background-color: white;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.podium-blurb {
+    grid-area: blurb;
+    background-image: linear-gradient(to left, rgb(206, 206, 206) 0%, white 5%);
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    padding: 1vw;
+}
+
+.podium-blurb h1 {
+    font-size: 2.3vw;
+}
+
+.podium-blurb p {
+    font-size: 1.5vw;
+}
+
+#leaderboard {
+    margin-top: 1vw;
+    font-size: 1.6vw;
+    font-family: "Omnes Medium";
+    width: 100%;
 }
 
 .title-2-container {
@@ -88,6 +167,7 @@ body {
 .info-tab {
     width: 29vw;
     padding-left: 1vw;
+    background-image: linear-gradient(to right, rgb(206, 206, 206) 0%, white 5%);
 }
 
 .chat-tab {
@@ -95,8 +175,19 @@ body {
     display: none;
 }
 
+.chat-tab iframe {
+    position: relative;
+    left: -2px;
+    top: -2px;
+}
+
 .info-tab-text {
     overflow: hidden;
+}
+
+#total-raised {
+    text-align: center;
+    font-size: 4vw;
 }
 
 .info-tab p {
@@ -134,4 +225,173 @@ body {
 
 .more-button {
     width: 59%;
+}
+
+@media screen and (max-width: 1100px) {
+    .main-box {
+        grid-template-columns: 1fr 12fr;
+        grid-template-rows: 36.5vw repeat(2, 44vw);
+        height: max-content;
+        border-radius: 1vw;
+        overflow: hidden;
+        grid-template-areas: 
+        ". stream-embed"
+        "info-tab-button right-panel "
+        "chat-tab-button right-panel"; 
+    }
+
+    .info-tab, .chat-tab {
+        width: 100%;
+        grid-area: right-panel;
+        background-color: white;
+        border-bottom-right-radius: 1vw;
+        border-bottom-left-radius: 1vw;
+        border-top-right-radius: 0vw;
+        overflow: hidden;
+    }
+
+    #title-1 {
+        font-size: 7vw;
+        padding-left: 1vw;
+        text-align: center;
+    }
+
+    .info-tab-text p {
+        padding-left: 1vw;
+        font-size: 3.5vw;
+    }
+
+    .title-2-container {
+        transform: translateX(-100%);
+        border-radius: 1vw;
+        margin: auto auto;
+        text-align: center;
+
+        width: 70vw;
+    }
+
+    .title-2-container h1 {
+        font-size: 5vw;
+    }
+
+    .info-tab {
+        padding-left: 0;
+    }
+
+    .donate-button, .more-button {
+        width: 75%;
+        height: 10vw;
+    }
+
+    .info-tab-buttons a {
+        margin: 12.5%;
+    }
+
+    .stream-embed-container {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1vw;
+    }
+
+    .info-tab-button, .chat-tab-button {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1vw;
+        width: 100%;
+        height: 75%;
+    }
+
+    .info-tab-button p, .chat-tab-button p {
+        font-size: 4vw;
+    }
+
+    .info-tab-button div, .chat-tab-button div {
+        /* 
+        Trying to vertically align this inside the tabs, it's being difficult but
+        for some ungodly reason the line-height property here does what I need.
+        If you look at the size of the bounding box using inspect tool though its
+        an absolute abomination of nature. ¯\_(ツ)_/¯ It works
+        */
+        line-height: 33vw; 
+        transform: rotate(-90deg);
+    }
+
+    
+    .info-tab-button {
+        top: 10%;
+    }
+
+    .chat-tab-button {
+        background-image: linear-gradient(to right, white ,rgb(240, 240, 240));
+    }
+    
+    .more-button, .donate-button {
+        margin-top: 2vw;
+        font-size: 5vw;
+    }
+
+    .info-tab {
+        background-image: linear-gradient(rgb(206, 206, 206) 0%, white 5%);
+    }
+
+    #podium-main-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60vw 110vw;
+        grid-template-areas:
+        "podium"
+        "blurb";
+    }
+
+    .podium-blurb {
+        background-image: linear-gradient(rgb(206, 206, 206) 0%, white 5%);
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 1vw;
+    }
+
+    .podium-container {
+        border-bottom-right-radius: 0;
+    }
+
+    .podium-blurb h1 {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .podium-blurb p {
+        font-size: 4vw;
+    }
+
+    #total-raised {
+        font-size: 8vw;
+    }
+
+    #leaderboard {
+        font-size: 4vw;
+        margin: auto auto;
+    }
+
+    #stonewall-box {
+        grid-template-rows: 63vw min-content;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "image"
+        "text";
+    }
+
+    .stonewall-info-box {
+        background-image: linear-gradient(rgb(206, 206, 206) 0%, white 5%);
+        border-top-left-radius: 0;
+    }
+
+    .stonewall-image-container {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 1vw;
+    }
+
+    .stonewall-info-box h1 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .stonewall-info-box p {
+        font-size: 3vw;
+    }
 }

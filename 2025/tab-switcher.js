@@ -5,9 +5,10 @@ async function register_click_handlers() {
         if (!info_active) {
             info_active = true
 
+            let current_grad = window.getComputedStyle(info_tab_el).getPropertyValue("background-image")
             info_tab_el.style.backgroundImage = "none";
             info_tab_el.style.backgroundColor = "white";
-            chat_tab_el.style.backgroundImage = "linear-gradient(white,rgb(206, 206, 206))";
+            chat_tab_el.style.backgroundImage = current_grad;
             info_tab_div.style.display = "block";
             chat_tab_div.style.display = "none";
         }
@@ -17,9 +18,10 @@ async function register_click_handlers() {
         if (info_active) {
             info_active = false
 
+            let current_grad = window.getComputedStyle(chat_tab_el).getPropertyValue("background-image")
             chat_tab_el.style.backgroundImage = "none";
             chat_tab_el.style.backgroundColor = "white";
-            info_tab_el.style.backgroundImage = "linear-gradient(white,rgb(206, 206, 206))";
+            info_tab_el.style.backgroundImage = current_grad;
             info_tab_div.style.display = "none";
             chat_tab_div.style.display = "block";
         }
