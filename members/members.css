@@ -48,20 +48,31 @@
 /* Need to define individually how many socials, I'm sure this can
 be automated but I'm not sure how, it may require JS and I can't be
 bothered currently, maybe something to look at in the future...  */
-.info1 .streamer .socials {
-    grid-template-columns: repeat(6, 1fr);
+
+.info5 .streamer .socials {
+  grid-template-columns: 1fr;
 }
 
-.info2 .streamer .socials, .info4 .streamer .socials{
-  grid-template-columns: repeat(4, 1fr);
+.info7 .streamer .socials,
+.info8 .streamer .socials {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.info3 .streamer .socials {
+.info6 .streamer .socials {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.info5 .streamer .socials, .info6 .streamer .socials,  .info7 .streamer .socials{
-  grid-template-columns: repeat(2, 1fr);
+.info4 .streamer .socials {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.info2 .streamer .socials,
+.info3 .streamer .socials {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.info1 .streamer .socials {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .socials a img {
@@ -207,6 +218,10 @@ bothered currently, maybe something to look at in the future...  */
   color: white;
 }
   
+.subtitle-container {
+  margin-top: 5vw;
+}
+
 .Streamers-Subtitle { 
     grid-area: Streamers-Subtitle;
 }
@@ -216,6 +231,12 @@ bothered currently, maybe something to look at in the future...  */
   font-size: 1.35vw;
   margin: 0;
   color: white;
+}
+
+.info4 .username,
+.info8 .username,
+.info5 .username {
+  font-size: 2.5vw;
 }
 
 @media screen and (max-width: 1100px) {
@@ -242,7 +263,7 @@ bothered currently, maybe something to look at in the future...  */
   }
 
   .Streamers-Title h1, .subtitle h1 {
-    font-size: 10vw;
+    font-size: 9vw;
   }
 
   #curve {
@@ -266,8 +287,10 @@ bothered currently, maybe something to look at in the future...  */
     font-size: 7vw;
   }
 
-  .info4 .username {
-    font-size: 6vw;
+  .info4 .username,
+  .info8 .username,
+  .info5 .username {
+    font-size: 5.5vw;
   }
 
   .name-pronouns {
@@ -277,4 +300,9 @@ bothered currently, maybe something to look at in the future...  */
   .socials a img {
     width: 5vw;
   }
+
+  .subtitle {
+    text-align: center;
+  }
+
 }
