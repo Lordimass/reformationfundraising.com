@@ -53,11 +53,11 @@ bothered currently, maybe something to look at in the future...  */
   grid-template-columns: 1fr;
 }
 
-.info7 .streamer .socials,
 .info8 .streamer .socials {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.info7 .streamer .socials,
 .info6 .streamer .socials {
   grid-template-columns: repeat(3, 1fr);
 }
