@@ -4,7 +4,7 @@ const homePageURL = "https://reformationfundraising.com"
 const favicon = document.createElement("link")
 favicon.setAttribute("rel", "icon")
 favicon.setAttribute("type","image/x-icon")
-favicon.setAttribute("href","https://reformationfundraising.com/images/favicon.ico")
+favicon.setAttribute("href","https://cdn.reformationfundraising.com/rffcom/favicon.ico")
 document.head.appendChild(favicon)
 
 // Set page title
@@ -33,7 +33,7 @@ logo.setAttribute("class", "logo")
 logo.setAttribute("href", homePageURL)
 
 const logoImg = document.createElement("img")
-logoImg.setAttribute("src", `${homePageURL}/images/logosmol.png`)
+logoImg.setAttribute("src", `https://cdn.reformationfundraising.com/rffcom/logosmol.png`)
 
 const logoH1 = document.createElement("h1")
 logoH1.innerText = "REFORMATION FUNDRAISING"
