@@ -97,8 +97,9 @@ const p5 = document.createElement("p")
 p2.innerText = "Contact lordimass@lordimass.net for support"
 p2.setAttribute("class", "left-footer-el")
 p3.innerText = "This site is licensed under Creative Commons BY-NC-ND 4.0"
-p4.setAttribute("class", "right-footer-el")
+p3.setAttribute("class", "middle-footer-el")
 p4.innerHTML = "Website programmed by <a target=\"_blank\" href=\"https://lordimass.net\">Lordimass</a>!"
+p4.setAttribute("class", "right-footer-el")
 
 // Nest footer elements
 async function nest_footer() {
