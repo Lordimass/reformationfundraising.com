@@ -88,18 +88,18 @@
     user-select: none;
 }
 
-#s2021 {background-image: url(images/2021theme.jpeg)}
-#s2022 {background-image: url(images/2022theme.gif); background-position-y: 100%}
-#s2023 {background-image: url(images/2023theme.jpeg)}
+#s2021 {background-image: url(https://cdn.reformationfundraising.com/rffcom/2021theme.jpeg)}
+#s2022 {background-image: url(https://cdn.reformationfundraising.com/rffcom/2022theme.gif); background-position-y: 100%}
+#s2023 {background-image: url(https://cdn.reformationfundraising.com/rffcom/2023theme.jpeg)}
 #s2020 {
-    background-image: url(images/2020theme.jpeg);
+    background-image: url(https://cdn.reformationfundraising.com/rffcom/2020theme.jpeg);
     background-position-y: 60%;
     border-top-left-radius: 0.5vw;
     border-top-right-radius: 0.5vw;
 }
 #s2024 {
     background-position-y: 60%;
-    background-image: url(images/2024theme.jpeg);
+    background-image: url(https://cdn.reformationfundraising.com/rffcom/2024theme.jpeg);
     border-bottom-left-radius: 0.5vw;
     border-bottom-right-radius: 0.5vw;
     color:black;
