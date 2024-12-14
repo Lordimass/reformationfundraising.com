@@ -239,9 +239,14 @@ bothered currently, maybe something to look at in the future...  */
   font-size: 2.5vw;
 }
 
+.extra-member .small-member {
+  font-size: 2.7vw;
+}
+
 @media screen and (max-width: 1100px) {
   .extra-members {
     grid-template-columns: 1fr;
+    width: 80%;
   }
 
   .extra-members h1 {
@@ -303,6 +308,10 @@ bothered currently, maybe something to look at in the future...  */
 
   .subtitle {
     text-align: center;
+  }
+
+  .extra-member .small-member {
+    font-size: 7vw;
   }
 
 }
