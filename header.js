@@ -62,6 +62,7 @@ for (let i = 2020; i <= latestYear; i++) {
     year.innerText = i
     dropdown.appendChild(year)
 }
+archive.addEventListener("click", maybe_redirect_to_archive_page)
 
 // Create Members
 const members = document.createElement("a")
@@ -121,6 +122,33 @@ async function position_footer() {
         footer.style.position = "absolute";
     }
 }
+
+async function update_archive_dropdown() {
+    // If user is on mobile, don't show dropdown
+    client_rect = document.body.getBoundingClientRect()
+    if (client_rect.width < 1100) {
+        const root_style = document.documentElement.style
+        root_style.setProperty("--archiveDropdownMode", "none")
+        root_style.setProperty("--archiveCursor", "pointer")
+    } else {
+        const root_style = document.documentElement.style
+        root_style.setProperty("--archiveDropdownMode", "block")
+        root_style.setProperty("--archiveCursor", "default")
+    }
+
+}
+
+async function maybe_redirect_to_archive_page() {
+    // If user is on mobile, send them to the dedicated archive page
+    client_rect = document.body.getBoundingClientRect()
+    if (client_rect.width < 1100) {
+        const newURL = `https://reformationfundraising.com/archive`;
+        window.location.replace(newURL);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', nest_footer);
+document.addEventListener('DOMContentLoaded', update_archive_dropdown);
+window.addEventListener("resize", update_archive_dropdown);
 window.addEventListener("resize", nest_footer);
 

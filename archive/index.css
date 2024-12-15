@@ -1,0 +1,38 @@
+.years {
+    display: grid;
+    height: 100%;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    overflow: hidden;
+}
+
+.year {
+    background-color: black;
+}
+
+.year h1 {
+    font-size: 20vw;
+    text-align: center;
+}
+
+#y2020 {
+    background-image: url("https://cdn.reformationfundraising.com/rffcom/2020theme.jpeg");
+    background-position-y: 50%;
+}
+#y2021 {
+    background-image: url("https://cdn.reformationfundraising.com/rffcom/2021theme.jpeg");
+    background-position-y: 25%;
+}
+#y2022 {
+    background-image: url("https://cdn.reformationfundraising.com/rffcom/2022theme.gif");
+    background-position-y: 75%;
+}
+#y2023 {
+    background-image: url("https://cdn.reformationfundraising.com/rffcom/2023theme.jpeg");
+    background-position-y: 50%;
+}
+#y2024 {
+    background-image: url("https://cdn.reformationfundraising.com/rffcom/2024theme.jpeg");
+    background-position-y: 50%;
+    color: black;
+}

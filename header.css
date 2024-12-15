@@ -1,3 +1,8 @@
+:root {
+    --archiveDropdownMode: block;
+    --archiveCursor: default;
+}
+
 .header {
     height: 7vh;
     background-color: black;
@@ -74,8 +79,11 @@
 }
 
 #archive:hover {font-weight: 700}
-#archive:hover .dropdown {display: block}
-#archive {user-select: none;}
+#archive:hover .dropdown {display: var(--archiveDropdownMode);}
+#archive {
+    user-select: none;
+    cursor: var(--archiveCursor);
+}
 
 .year {
     padding: 12px 16px;
