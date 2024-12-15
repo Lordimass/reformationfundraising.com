@@ -101,8 +101,8 @@ p3.setAttribute("class", "middle-footer-el")
 p4.innerHTML = "Website programmed by <a target=\"_blank\" href=\"https://lordimass.net\">Lordimass</a>!"
 p4.setAttribute("class", "right-footer-el")
 
-// Nest footer elements
 async function nest_footer() {
+    // Nest footer elements
     position_footer()
     document.body.appendChild(footer)
     footer.appendChild(p1)
@@ -114,15 +114,13 @@ async function nest_footer() {
 
 async function position_footer() {
     // Set footer display mode to position it correctly to the bottom of the page
-    body = document.body
-    if (window.innerHeight < body.getBoundingClientRect().height) {
-        console.log(window.innerHeight + " " + body.getBoundingClientRect().height + " Window height means footer position changed to relative")
+    client_rect = document.body.getBoundingClientRect()
+    if (window.innerHeight < client_rect.height) {
         footer.style.position = "relative";
     } else {
-        console.log(window.innerHeight + " " + body.getBoundingClientRect().height + " Window height means footer position changed to absolute")
         footer.style.position = "absolute";
     }
 }
 document.addEventListener('DOMContentLoaded', nest_footer);
-document.addEventListener("resize", nest_footer)
+window.addEventListener("resize", nest_footer);
 
