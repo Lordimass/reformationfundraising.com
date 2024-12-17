@@ -44,6 +44,31 @@ body {
     "stream-embed right-panel right-panel"; 
 }
 
+#schedule-main-box {
+    grid-template-columns: 32% 67%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "schedule info";
+    background-color: white;
+}
+
+.schedule-container {
+    grid-area: schedule
+}
+
+.schedule-info-container {
+    grid-area: info;
+    background-image: linear-gradient(to right, rgb(206, 206, 206) 0%, white 2%);;
+}
+
+.schedule-info {
+    margin: 2vw;
+}
+
+.schedule-info i, .schedule-info p {
+    font-family: "Omnes Light";
+    font-size: 1.6vw;
+}
+
 #stonewall-box {
     grid-template-columns: 67% 32%;
     grid-template-rows: 1fr;
@@ -230,7 +255,7 @@ body {
 @media screen and (max-width: 1100px) {
     .main-box {
         grid-template-columns: 1fr 12fr;
-        grid-template-rows: 36.5vw repeat(2, 68vw);
+        grid-template-rows: 36.5vw repeat(2, min-content);
         height: max-content;
         border-radius: 1vw;
         overflow: hidden;
@@ -238,6 +263,10 @@ body {
         ". stream-embed"
         "info-tab-button right-panel "
         "chat-tab-button right-panel"; 
+    }
+
+    .donate-button {
+        margin-bottom: 3vw;
     }
 
     .info-tab, .chat-tab {
@@ -332,9 +361,31 @@ body {
         background-image: linear-gradient(rgb(206, 206, 206) 0%, white 5%);
     }
 
+    #schedule-main-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content;
+        grid-template-areas: 
+        "schedule"
+        "info";
+    }
+
+    .schedule-info i, .schedule-info p {
+        font-size: 3vw;
+    }
+
+    .schedule-container img {
+        width: 65%;
+        justify-self: center;
+        display: flex;
+    }
+
+    .schedule-info-container {
+        background-image: linear-gradient(rgb(206, 206, 206) 0%, white 2%);
+    }
+
     #podium-main-box {
         grid-template-columns: 1fr;
-        grid-template-rows: 60vw 110vw;
+        grid-template-rows: 60vw min-content;
         grid-template-areas:
         "podium"
         "blurb";
