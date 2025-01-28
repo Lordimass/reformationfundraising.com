@@ -49,25 +49,24 @@
 be automated but I'm not sure how, it may require JS and I can't be
 bothered currently, maybe something to look at in the future...  */
 
-.info5 .streamer .socials {
+.info4 .streamer .socials {
   grid-template-columns: 1fr;
 }
 
-.info8 .streamer .socials {
+.info7 .streamer .socials {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.info7 .streamer .socials,
-.info6 .streamer .socials {
+.info6 .streamer .socials,
+.info5 .streamer .socials {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.info4 .streamer .socials {
+.info3 .streamer .socials {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.info2 .streamer .socials,
-.info3 .streamer .socials {
+.info2 .streamer .socials {
   grid-template-columns: repeat(5, 1fr);
 }
 
@@ -233,9 +232,9 @@ bothered currently, maybe something to look at in the future...  */
   color: white;
 }
 
-.info4 .username,
-.info8 .username,
-.info5 .username {
+.info3 .username,
+.info7 .username,
+.info4 .username {
   font-size: 2.5vw;
 }
 
