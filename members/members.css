@@ -53,11 +53,10 @@ bothered currently, maybe something to look at in the future...  */
   grid-template-columns: 1fr;
 }
 
-.info7 .streamer .socials {
+.info6 .streamer .socials {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.info6 .streamer .socials,
 .info5 .streamer .socials {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -121,7 +120,7 @@ bothered currently, maybe something to look at in the future...  */
   margin: auto auto;
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   justify-content: center;
@@ -233,8 +232,7 @@ bothered currently, maybe something to look at in the future...  */
 }
 
 .info3 .username,
-.info7 .username,
-.info4 .username {
+.info6 .username {
   font-size: 2.5vw;
 }
 
@@ -282,19 +280,16 @@ bothered currently, maybe something to look at in the future...  */
     "img3 info3"
     "img4 info4"
     "img5 info5"
-    "img6 info6"
-    "img7 info7" 
-    "img8 info8";
+    "img6 info6";
   }
 
   .username {
     font-size: 7vw;
   }
 
-  .info4 .username,
-  .info8 .username,
-  .info5 .username {
-    font-size: 5.5vw;
+  .info3 .username,
+  .info6 .username {
+    font-size: 5vw;
   }
 
   .name-pronouns {
