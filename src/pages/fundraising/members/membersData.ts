@@ -52,14 +52,6 @@ export const membersData: MemberData[] = [ // Order of members determines the or
         participating: true,
     },
     {
-        "username": "otherworldlyfinn",
-        "icon" : `${IMAGES_BUCKET}streamer-icons/otherwordlyfinn-icon.png`,
-        "name" : "Finn",
-        "pronouns" : "He/They",
-        streaming: false,
-        participating: true,
-    },
-    {
         "username": "deckedbyschmeck",
         "icon" : `${IMAGES_BUCKET}streamer-icons/schmeck-icon.png`,
         "name" : "James",
@@ -98,6 +90,14 @@ export const membersData: MemberData[] = [ // Order of members determines the or
         "pronouns" : "He/Him",
         streaming: false,
         participating: true,
+    },
+    {
+        "username": "otherworldlyfinn",
+        "icon" : `${IMAGES_BUCKET}streamer-icons/otherwordlyfinn-icon.png`,
+        "name" : "Finn",
+        "pronouns" : "He/They",
+        streaming: false,
+        participating: false,
     },
     {
         "username": "Skipper",
